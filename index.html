@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paws & Whiskers | Dogs and Cats</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#fff8f0;color:#333;line-height:1.6}
+header{background:#563626;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+header h1{font-size:26px}
+nav a{color:white;text-decoration:none;margin-left:16px;font-weight:bold}
+nav a:hover{color:#ffd28b}
+.hero{min-height:400px;padding:60px 8%;background:linear-gradient(120deg,#ffe3bd,#fff4e5);display:flex;align-items:center;justify-content:space-between;gap:30px}
+.hero-content{max-width:550px}
+.hero h2{font-size:clamp(35px,5vw,50px);line-height:1.15;color:#563626;margin-bottom:20px}
+.hero p{font-size:18px;line-height:1.8;margin-bottom:25px}
+.hero img{width:42%;max-width:430px;border-radius:25px;object-fit:cover}
+.btn{display:inline-block;background:#e88936;color:white;padding:12px 24px;border:0;border-radius:25px;text-decoration:none;font-size:16px;cursor:pointer;font-weight:bold}
+.btn:hover{background:#bd6420}
+section{padding:60px 8%;text-align:center}
+section h2{font-size:34px;color:#563626;margin-bottom:12px}
+.subtitle{color:#666;margin-bottom:30px}
+.pet-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px;margin-top:30px}
+.pet-card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 5px 15px #00000015;transition:transform .3s;text-align:left}
+.pet-card:hover{transform:translateY(-7px)}
+.pet-card img{width:100%;height:230px;object-fit:cover}
+.pet-info{padding:20px}
+.pet-info h3{color:#563626;margin-bottom:10px}
+.pet-info p{line-height:1.6;color:#666}
+.cats{background:#ffead9}
+.about-content{max-width:750px;margin:auto;line-height:1.8}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-top:30px}
+.tip{padding:25px;background:white;border-radius:15px;box-shadow:0 4px 12px #00000010}
+.tip span{font-size:35px}
+.contact{background:#fff0df}
+form{max-width:500px;margin:25px auto 0;display:grid;gap:15px}
+input,select,textarea{padding:13px;border:1px solid #ddd;border-radius:8px;font-size:16px;width:100%;font-family:inherit}
+textarea{min-height:100px;resize:vertical}
+#result{margin-top:15px}
+footer{background:#563626;color:white;text-align:center;padding:25px}
+@media(max-width:700px){header{justify-content:center;text-align:center}nav a{display:inline-block;margin:6px}.hero{flex-direction:column;text-align:center;padding:45px 6%}.hero img{width:100%}.hero h2{font-size:36px}section{padding:45px 6%}}
+</style>
+</head>
+<body>
+<header>
+<h1>🐾 Paws &amp; Whiskers</h1>
+<nav><a href="#home">Home</a><a href="#dogs">Dogs</a><a href="#cats">Cats</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="hero-content"><h2>Love, Care &amp; Happy Paws!</h2><p>Welcome to the wonderful world of dogs and cats. Discover adorable pets, learn about their habits, and find out how to keep your furry friends happy.</p><a href="#dogs" class="btn">Explore Pets 🐶</a></div>
+<img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Happy dog outdoors">
+</section>
+<section id="dogs"><h2>🐶 Meet Our Dogs</h2><p class="subtitle">Loyal, playful and loving companions.</p><div class="pet-container">
+<article class="pet-card"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Golden Retriever"><div class="pet-info"><h3>Golden Retriever</h3><p>Friendly and intelligent dogs who love playing and spending time with their families.</p></div></article>
+<article class="pet-card"><img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Cute dog"><div class="pet-info"><h3>Little Puppies</h3><p>Adorable young dogs who need gentle training, proper food and lots of affection.</p></div></article>
+<article class="pet-card"><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Happy dog"><div class="pet-info"><h3>Playful Pals</h3><p>Dogs enjoy walks, games, exercise and building strong bonds with their owners.</p></div></article>
+</div></section>
+<section class="cats" id="cats"><h2>🐱 Meet Our Cats</h2><p class="subtitle">Curious, graceful and full of personality.</p><div class="pet-container">
+<article class="pet-card"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Beautiful cat"><div class="pet-info"><h3>Lovely Cats</h3><p>Cats are curious explorers who enjoy comfortable spaces and gentle attention.</p></div></article>
+<article class="pet-card"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Fluffy cat"><div class="pet-info"><h3>Fluffy Friends</h3><p>Soft and adorable companions who often enjoy toys, naps and cosy beds.</p></div></article>
+<article class="pet-card"><img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Relaxing cat"><div class="pet-info"><h3>Happy Whiskers</h3><p>Cats need fresh water, balanced food, a clean litter box and regular health care.</p></div></article>
+</div></section>
+<section id="about"><div class="about-content"><h2>❤️ How to Care for Pets</h2><p>Every pet deserves a safe home, nutritious food, exercise and loving care. Being a responsible pet owner helps dogs and cats live healthier and happier lives.</p><div class="tips">
+<div class="tip"><span>🥣</span><h3>Healthy Food</h3><p>Give pets suitable food and clean drinking water.</p></div>
+<div class="tip"><span>🎾</span><h3>Daily Activity</h3><p>Provide playtime, exercise and mental stimulation.</p></div>
+<div class="tip"><span>🩺</span><h3>Health Care</h3><p>Visit a veterinarian for regular check-ups.</p></div>
+</div></div></section>
+<section class="contact" id="contact"><h2>📩 Contact Us</h2><p class="subtitle">Tell us which furry friend you love most!</p>
+<form id="contactForm"><input type="text" id="name" placeholder="Your Name" required><input type="email" id="email" placeholder="Your Email" required><select id="favourite" required><option value="">Choose your favourite</option><option value="Dogs">Dogs 🐶</option><option value="Cats">Cats 🐱</option><option value="Both">Both 🐾</option></select><textarea id="message" placeholder="Write your message..." required></textarea><button type="submit" class="btn">Send Message</button></form><p id="result" role="status" aria-live="polite"></p></section>
+</main>
+<footer><p>🐾 Paws &amp; Whiskers — Made with ❤️ for Dogs and Cats</p><p>&copy; <span id="year"></span> All Rights Reserved.</p></footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+ event.preventDefault();
+ const name = document.getElementById("name").value.trim();
+ const favourite = document.getElementById("favourite").value;
+ document.getElementById("result").textContent = "Thank you, " + name + "! We are happy you love " + favourite + ". This demo form does not send messages.";
+ this.reset();
+});
+</script>
+</body>
+</html>
